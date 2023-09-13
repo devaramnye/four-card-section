@@ -5,40 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+  <main>
+    <div class="container">
+      <hgroup class="heading">
+        <p class="heading__p heading__p--color heading__p--size heading__p--weight">Reliable, efficient delivery</p>
+        <h1 class="heading__h heading__h--color heading__h--size heading__h--weight">Powered by Technology</h1>
+      </hgroup>
+      <p class="container__p container__p--size container__p--color">
+        Our Artifical Intelligence powered tools
+        use millions of project data points to
+        ensure that your project is successful
+      </p>
+    </div>
+    <ul class="cards">
+      <li class="firstcard">
+        <h2 class="firstcard__h firstcard__h--color firstcard__h--size">Supervisor</h2>
+        <p class="firstcard__p firstcard__p--color firstcard__p--size">Monitors activity to identify project roadblocks</p>
+        <div class="img-container">
+          <img src="./images/icon-supervisor.svg" alt="">
+        </div>
+      </li>
+      <li class="secondcard">
+        <h2 class="secondcard__h secondcard__h--color secondcard__h--size">Team Builder</h2>
+        <p class="secondcard__p secondcard__p--color secondcard__p--size">Scans our talent network to create the optimal
+          team for your project
+        </p>
+        <div class="img-container">
+          <img src="./images/icon-team-builder.svg" alt="">
+        </div>
+      </li>
+      <li class="thirdcard">
+        <h2 class="thirdcard__h thirdcard__h--color thirdcard__h--size">Karma</h2>
+        <p class="thirdcard__p thirdcard__p--color thirdcard__p--size">Regularly evaluates our talent to ensure quality</p>
+        <div class="img-container">
+          <img src="./images/icon-karma.svg" alt="">
+        </div>
+      </li>
+      <li class="fourthcard">
+        <h2 class="fourthcard__h fourthcard__h--color fourthcard__h--size">Calculator</h2>
+        <p class="fourthcard__p fourthcard__p--color fourthcard__p--size">Uses data from last projects to provide better delivery
+          estimates
+        </p>
+        <div class="img-container">
+          <img src="./images/icon-calculator.svg" alt="">
+        </div>
+      </li>
+    </ul>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Aram Nayebbandi</a>.
     </p>
   </footer>
 </body>
