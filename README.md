@@ -1,3 +1,3 @@
 # Solution
 
-[https://devaramnye.github.io/four-card-section/](Project)
+[https://devaramnye.github.io/four-card-section/]
