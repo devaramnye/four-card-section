@@ -41,15 +41,17 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 2rem;
 }
 
 .container {
   text-align: center;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container__p { 
@@ -162,28 +164,39 @@ img {
 
 .attribution { text-align: center; }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 38rem) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 70rem;
   }
 
   #supervisor {
     grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
     
   }
 
   #builder {
     grid-column-start: 2;
     grid-row-start: 1;
+    grid-row-end: 3;
   }
 
   #karma {
     grid-column-start: 2;
-    grid-row-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
 
   #calculator {
     grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
   }
+
+  .container__p {
+    width: 65%;
+  }  
 }
