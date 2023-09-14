@@ -161,3 +161,29 @@ img {
 .fourthcard__p--size { font-size: 0.8rem;}
 
 .attribution { text-align: center; }
+
+@media only screen and (min-width: 40rem) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #supervisor {
+    grid-column-start: 1;
+    
+  }
+
+  #builder {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  #karma {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  #calculator {
+    grid-column-start: 3;
+  }
+}
