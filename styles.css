@@ -42,6 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   padding: 2rem;
 }
 
@@ -198,5 +199,10 @@ img {
 
   .container__p {
     width: 65%;
-  }  
+  }
+
+  .heading__p--size { font-size: 2rem; }
+
+  .heading__h--size { font-size: 2rem;}
+
 }
